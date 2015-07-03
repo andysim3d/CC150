@@ -8,6 +8,9 @@ public class question1_1 {
 	 * @return true on unique, otherwise false
 	 */
 	public static boolean check(String input){
+		if(input.isEmpty() || input.length() <= 1){
+			return true;
+		}
 		if(input.length() > 26){
 			return false;
 		}
